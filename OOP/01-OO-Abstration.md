@@ -14,11 +14,11 @@ class BankAccount {
     }
 
     // A bank account should do: Deposit, withdraw, check balance
-    depositar(amountDeposited) {
+    deposit(amountDeposited) {
         this.balance += amountDeposited;
     }
 
-    sacar(amountWithdrawn) {
+    withdraw(amountWithdrawn) {
         this.balance -= amountWithdrawn;
     }
 
@@ -31,9 +31,9 @@ class BankAccount {
     let savingAccount = new BankAccount ();
 
     console.log(checkingAccount.checkBalance());
-    checkingAccount.depositar(105.80);
+    checkingAccount.deposit(105.80);
     console.log(checkingAccount.checkBalance());
-    checkingAccount.sacar(30.40);
+    checkingAccount.withdraw(30.40);
     console.log(checkingAccount.checkBalance()); 
 }
 ```

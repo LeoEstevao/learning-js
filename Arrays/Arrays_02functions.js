@@ -1,5 +1,11 @@
 let arr = ['Pedro', 'Marcio', 'Elizangela', 'Jubileu', 'Ana', 'Camila', 'Adolfo'];
 
+// Verifies if it is an Array (typeof(arr) will return 'object')
+// console.log(typeof(arr));
+console.log(
+    Array.isArray(arr)
+)
+
 // Functions bellow, DIRECTLY modify an Array
 
 // Inserting records in the end of the array
@@ -62,3 +68,4 @@ console.log(arr)
     // (ECMAScript 2016)
 // Check if an array has an specific value, and returns true/false
 arr.includes('Pedro');
+
